@@ -1,0 +1,197 @@
+body {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.questionnaire {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-create {
+    display: inline;
+    align-content: center;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid lightgray;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.home-btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.add-question{
+    margin-left: 20px;
+    border-radius: 3px;
+}
+
+.add-question:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.questionnaireName{
+    text-align: left;
+    width: 60%;
+    alignment: left;
+    border: 2px solid slategray;
+    margin: 4px;
+}
+
+.question-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    border: 2px solid lightgray;
+    margin: 5px;
+}
+
+.change-question{
+    padding: 3px;
+    width: 60%;
+    border: 2px solid lightgray;
+    margin: 6px auto auto;
+}
+
+.del-btn.btn-warning{
+    margin-right: 8px;
+    background: #f5057f;
+    border-radius: 3px;
+}
+#change-question > .btn-primary{
+    background: #a0c6ff;
+}
+
+.questions{
+    margin: 3px;
+}
+
+.form-control.field{
+    border: 2px solid lightgray;
+    width: 60%;
+    alignment: left;
+    background: #ffffaa;
+    color: black;
+    text-effect: emboss;
+    display: inline;
+    margin: 2px;
+}
+
+.new-answer {
+    display: inline;
+    text-align: start;
+}
+
+.wrapper {
+    width: 250px;
+    height: 400px;
+    margin: 50px auto;
+    perspective: 600px;
+    text-align: left;
+}
+
+.main-form {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+.face {
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    padding: 20px;
+    background: rgba(250, 250, 250, 0.96);
+    border: 3px solid darkcyan;
+    border-radius: 3px;
+    text-align: center;
+}
+.content {
+    color: #666;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #07ad90;
+}
+
+.field-wrapper {
+    margin-top: 30px;
+    position: relative;
+}
+
+label {
+    position: absolute;
+    pointer-events: none;
+    font-size: 0.85em;
+    top: 40%;
+    left: 0;
+}
+
+input[type="text"], input[type="password"], input[type="submit"], textarea {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+input[type="text"], input[type="password"], textarea {
+    width: 100%;
+    border: none;
+    background: transparent;
+    line-height: 2em;
+    border-bottom: 1px solid green;
+    color: #666;
+}
+
+input[type="submit"] {
+    width: 50%;
+    background: #07ad90;
+    line-height: 2em;
+    color: #fff;
+    border: 1px solid #07ad70;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+input::placeholder {
+    opacity: 0;
+}
+
+/*input:focus + label {
+    top: -35%;
+    color: #07ad90;
+}*/
+input:focus + label, input:not(:placeholder-shown) + label {
+    top: -35%;
+    color: #07ad90;;
+}
+
+
+.signup {
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+    color: #07ad90;
+}
+
+.save-questionnaire {
+    width: 30%;
+    alignment: center;
+    margin: auto;
+}
+.save-questionnaire:hover{
+    background: green;
+}
+
+#name-que:hover{
+    background: #a0c6ff;
+}
+
+#name-que:focus{
+    background: #f5057f;
+}
